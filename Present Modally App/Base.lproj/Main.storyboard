@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Present_Modally_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sayfa1" id="BYZ-38-t0r" customClass="ViewController" customModule="Present_Modally_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to 2"/>
                                 <connections>
-                                    <segue destination="5hb-ET-KoO" kind="presentation" modalPresentationStyle="fullScreen" id="3Bd-4u-8oo"/>
+                                    <action selector="goTo2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPd-iB-whs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,7 +48,7 @@
         <!--View Controller2-->
         <scene sceneID="c3T-dP-bnB">
             <objects>
-                <viewController id="5hb-ET-KoO" customClass="ViewController2" customModule="Present_Modally_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sayfa2" id="5hb-ET-KoO" customClass="ViewController2" customModule="Present_Modally_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mau-m0-jSi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to 3"/>
                                 <connections>
-                                    <segue destination="bb5-uc-gtM" kind="presentation" modalPresentationStyle="fullScreen" id="I9n-Sh-ve4"/>
+                                    <action selector="goTo3:" destination="5hb-ET-KoO" eventType="touchUpInside" id="eaK-sN-g1Z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWt-Pw-hhK">
@@ -95,7 +95,7 @@
         <!--View Controller3-->
         <scene sceneID="PvJ-Sm-uaZ">
             <objects>
-                <viewController id="bb5-uc-gtM" customClass="ViewController3" customModule="Present_Modally_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sayfa3" id="bb5-uc-gtM" customClass="ViewController3" customModule="Present_Modally_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hll-Ni-45J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +111,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to 1"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="6f2-Fg-ijq"/>
+                                    <action selector="goTo1:" destination="bb5-uc-gtM" eventType="touchUpInside" id="v5f-3k-iaT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7T-2W-5Dr">
@@ -119,7 +119,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to 2"/>
                                 <connections>
-                                    <segue destination="5hb-ET-KoO" kind="presentation" modalPresentationStyle="fullScreen" id="6RU-1f-3dG"/>
+                                    <action selector="goTo2:" destination="bb5-uc-gtM" eventType="touchUpInside" id="SUc-XF-pBF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -140,10 +140,6 @@
             <point key="canvasLocation" x="1533" y="67"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="I9n-Sh-ve4"/>
-        <segue reference="6RU-1f-3dG"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
